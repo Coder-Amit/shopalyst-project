@@ -1,0 +1,54 @@
+.drop-container {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  place-content: center;
+}
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.drop-inputfields {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.drop-inputfields input {
+  width: 15rem;
+  padding: 0.5rem;
+  height: 3rem;
+  border: none;
+  border-bottom: 1px solid #0066cc;
+  border-top: 1px solid #0066cc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.drop-trigger {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+.drop-trigger:hover {
+  color: #0066cc;
+}
+.drop-list {
+  width: 100%;
+  position: absolute;
+  top: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.drop-list-item {
+  margin: 1px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+}
+.drop-list-item:hover {
+  background-color: #0066cc65;
+}
+
+.selected {
+  background-color: #0066cc65;
+}
